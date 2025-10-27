@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    top: 0;
+    background-color: white;
+    z-index: 120;
+    position: sticky;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 950px) {
+    
+    .footer-content {
+        padding: 0 1.5rem;
+    }
+
+    .footer-column {
+        width: 100%; /* Each column takes full width */
+        margin-bottom: 1.5rem;
+    }
+
+    .tata-brand {
+        margin-bottom: 3rem; 
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navtwo ul{
+        flex-wrap: wrap;
+    }
+
+}
+
+
+.navone img {
+    height: 50px;
+    padding: 10px 20px;
+}
+
+.navtwo ul {
+    display: flex;
+    gap: 2vw;
+    list-style: none;
+    color: rgb(122, 128, 132);
+    font-weight: 490;
+    font-size: 16px;
+}
+.tata-footer {
+    background-color: #333333; /* Dark Gray Background */
+    color: #cccccc; /* Light Gray Text */
+    padding: 3rem 0; /* Top and Bottom Padding */
+    width: 100vw;
+}
+
+/* Container for all columns */
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex; /* Enable Flexbox for column layout */
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow columns to wrap */
+}
+
+/* --- Column Styling --- */
+.footer-column {
+    margin-bottom: 3rem; /* Space between rows on mobile */
+    min-width: 150px;
+}
+
+.tata-brand {
+    padding-right: 1.5rem;
+}
+
+/* --- Titles and Links --- */
+.column-title {
+    font-size: 1.1rem;
+    color: #f1f1f1; /* Off-White Title Color */
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.footer-links-list {
+    list-style: none;
+}
+
+.footer-link {
+    display: inline-block;
+    color: #cccccc;
+    text-decoration: none;
+    padding: 0.75rem 0;
+    font-size: 0.95rem;
+    transition: color 0.2s ease-in-out;
+}
+
+.footer-link:hover {
+    color: #ffffff; /* White on Hover */
+}
+
+/* Icon (Arrow) Styling */
+.footer-link .fas,
+.footer-link .fab {
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+}
+
+/* Social Icon Styling */
+.social-links .fab {
+    margin-right: 0.5rem;
+    margin-left: 0;
+    width: 1rem;
+    text-align: center;
+}
+
+/* Logo Styling */
+.tata-logo {
+    display: block;
+    max-width: 100px; 
+    height: auto;
+    margin-bottom: 0.75rem;
+    filter: invert(1); 
+}
+
+.logo-link {
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+/* --- Footer Bottom Section --- */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    max-width: 1200px;
+    margin: 1.5rem auto 0;
+    padding: 1.5rem 1.5rem 0;
+    font-size: 0.85rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.roadside-assistance {
+    margin-bottom: 0.75rem; 
+}
+
+.roadside-assistance a {
+    color: #999999; /* Roadside Call Number Color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.copyright {
+    color: #999999; /* Copyright Text Color */
+    margin-bottom: 0.75rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-weight: 490px;
+    box-sizing: border-box;
+}
+
+.navtwo li:hover {
+    color: #0056b3;
+    cursor: pointer;
+}
+
+.navthree ul {
+    display: flex;
+    list-style: none;
+    gap: 2vw;
+    padding-right: 2vw;
+    align-items: center;
+}
+
+.navthree img {
+    height: 33px;
+}
+.logout{
+    display: flex;
+    justify-content: center;
+}
+.log{
+    width: 80vw;
+}
+    </style>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <div class="nav">
+        <div class="navone"><img src="./tata.webp" alt="Tata Motors Logo"></div>
+        <div class="navtwo">
+            <ul>
+                <li style="    font-weight: 490px;
+">Dealer Locator</li>
+                <li style="    font-weight: 490px;
+">Investors</li>
+                <li style="    font-weight: 490px;
+">Corporate Responsibility</li>
+                <li style="    font-weight: 490px;
+">Careers</li>
+                <li style="    font-weight: 490px;
+">Newsroom</li>
+                <a style="text-decoration: none; color: blue;    font-weight: 490px;
+" href="account.html">Account</a>
+            </ul>
+        </div>
+        <div class="navthree">
+            <ul>
+                <li><img src="./Screenshot 2025-10-20 161833.png" alt=""></li>
+                <li><img src="./Screenshot 2025-10-20 161841.png" alt=""></li>
+            </ul>
+        </div>
+    </div>
+
+<div class="logout">
+    <div class="log" style="line-height: 3;">
+        <div class="from" style="float: left;">
+            <h1 style="padding-top: 5vw;">Log in or sign up</h1>
+
+
+            <h2><input style="width: 37vw;margin-top: 4vw;height: 5vh;" type="text" placeholder="Enter Your Name"></h2>
+            <h2><input style="width: 37vw; height: 5vh;" type="number" placeholder=" Your Mobile Number"></h2>
+
+            <input type="submit" style="height: 2vw;color: white; background-color: blue;border: 1px solid blue;font-family: sans-serif;width: 37vw;">
+                <p style="color: blue;">Log in or sign up using your email address &rarr;
+
+        </div>
+        
+        <div class="img"><img src="./login.webp" alt="" style="height: 60vh;padding-top: 5vh;"></div>
+
+        
+    </div>
+    
+    </div>
+<footer class="tata-footer" style="float:right;">
+        <div class="footer-content">
+
+            <div class="footer-column tata-brand">
+                <a href="#" class="logo-link">
+                    <img style="color: white;" src="./Tata_Sons_Logo_48_32.webp" alt="TATA Logo" class="tata-logo">
+                </a>
+                <a href="#" class="footer-link">TATA <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="footer-column">
+                <h3 class="column-title">Tata Cars</h3>
+                <ul class="footer-links-list">
+                    <li><a href="#" class="footer-link">Nexon <i class="fas fa-arrow-right"></i></a></li>
+                    <li><a href="#" class="footer-link">Tiago <i class="fas fa-arrow-right"></i></a></li>
+                    <li><a href="#" class="footer-link">Tigor <i class="fas fa-arrow-right"></i></a></li>
+                    <li><a href="#" class="footer-link">Punch <i class="fas fa-arrow-right"></i></a></li>
+                    <li><a href="#" class="footer-link">Curvv <i class="fas fa-arrow-right"></i></a></li>
+                    <li><a href="#" class="footer-link">Harrier <i class="fas fa-arrow-right"></i></a></li>
+                    <li><a href="#" class="footer-link">Safari <i class="fas fa-arrow-right"></i></a></li>
+                    <li><a href="#" class="footer-link">Altroz <i class="fas fa-arrow-right"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 class="column-title">Help</h3>
+                <ul class="footer-links-list">
+                    <li><a href="#" class="footer-link">Service <i class="fas fa-arrow-right"></i></a></li>
+                    <li><a href="#" class="footer-link">Dealer Locator <i class="fas fa-arrow-right"></i></a></li>
+                    <li><a href="#" class="footer-link">Digital Showroom <i class="fas fa-arrow-right"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 class="column-title">Quick Links</h3>
+                <ul class="footer-links-list">
+                    <li><a href="#" class="footer-link">Contact Us <i class="fas fa-arrow-right"></i></a></li>
+                    <li><a href="#" class="footer-link">Privacy Policy <i class="fas fa-arrow-right"></i></a></li>
+                    <li><a href="tc.html" class="footer-link">Terms & Condition <i class="fas fa-arrow-right"></i></a></li>
+                    <li><a href="#" class="footer-link">Blogs <i class="fas fa-arrow-right"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column social-links">
+                <h3 class="column-title">Social</h3>
+                <ul class="footer-links-list">
+                    <li><a href="#" class="footer-link"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                    <li><a href="#" class="footer-link"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#" class="footer-link"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#" class="footer-link"><i class="fab fa-youtube"></i> Youtube</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p class="roadside-assistance">
+                For Roadside Assistance, call on - <a href="tel:18002098282">18002098282</a>
+            </p>
+            <p class="copyright">
+                Copyright © 2025 TATA Motors. All Rights Reserved
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

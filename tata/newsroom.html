@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        * {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            box-sizing: border-box;
+        }
+        .tata-footer {
+    background-color: #333333; /* Dark Gray Background */
+    color: #cccccc; /* Light Gray Text */
+    padding: 3rem 0; /* Top and Bottom Padding */
+    width: 100vw;
+}
+
+/* Container for all columns */
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex; /* Enable Flexbox for column layout */
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow columns to wrap */
+}
+
+/* --- Column Styling --- */
+.footer-column {
+    margin-bottom: 3rem; /* Space between rows on mobile */
+    min-width: 150px;
+}
+
+.tata-brand {
+    padding-right: 1.5rem;
+}
+
+/* --- Titles and Links --- */
+.column-title {
+    font-size: 1.1rem;
+    color: #f1f1f1; /* Off-White Title Color */
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.footer-links-list {
+    list-style: none;
+}
+
+.footer-link {
+    display: inline-block;
+    color: #cccccc;
+    text-decoration: none;
+    padding: 0.75rem 0;
+    font-size: 0.95rem;
+    transition: color 0.2s ease-in-out;
+}
+
+.footer-link:hover {
+    color: #ffffff; /* White on Hover */
+}
+
+
+
+/* Icon (Arrow) Styling */
+.footer-link .fas,
+.footer-link .fab {
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+}
+
+/* Social Icon Styling */
+.social-links .fab {
+    margin-right: 0.5rem;
+    margin-left: 0;
+    width: 1rem;
+    text-align: center;
+}
+
+/* Logo Styling */
+.tata-logo {
+    display: block;
+    max-width: 100px; 
+    height: auto;
+    margin-bottom: 0.75rem;
+    filter: invert(1); 
+}
+
+.logo-link {
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+/* --- Footer Bottom Section --- */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    max-width: 1200px;
+    margin: 1.5rem auto 0;
+    padding: 1.5rem 1.5rem 0;
+    font-size: 0.85rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.roadside-assistance {
+    margin-bottom: 0.75rem; 
+}
+
+.roadside-assistance a {
+    color: #999999; /* Roadside Call Number Color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.copyright {
+    color: #999999; /* Copyright Text Color */
+    margin-bottom: 0.75rem;
+}
+
+
+        .banner {
+            /* width: 100vw;
+            background-image: url("./all-pv-banner.webp");
+            height: 75vh;
+            border: 3px solid blue;
+            background-repeat: no-repeat;
+            background-size: contain; */
+            background-image: url("./all-pv-banner.webp");
+    width: 100%;
+    height: 47vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+        }
+
+        .nav {
+            display: flex;
+            /* flex-direction: row; */
+            justify-content: space-between;
+            padding: 2vw;
+
+        }
+
+
+
+        .navthree ul {
+            display: flex;
+
+            list-style: none;
+            padding: 0.5vw;
+            gap: 10px;
+
+        }
+
+        .navthree li img {
+            height: 3.5vw;
+
+        }
+
+        .main {
+            width: 80vw;
+            /* border: 2px solid black; */
+            padding: 0;
+
+        }
+
+        .outmain {
+            display: flex;
+            justify-content: center;
+            /* border: 2px solid red; */
+            padding: 0;
+        }
+
+
+
+
+
+        .banner1{
+            width: 39vw;
+            height: 50vh;
+            /* border: 1px solid red; */
+            background-image: url("./nexon-red-dark-key-visual.jpg");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .banner2{
+            width: 39vw;
+            height: 50vh;
+            /* border: 1px solid rgb(0, 0, 0); */
+            top: 100vh;
+            background-image: url("./tata-motors-q2-fy26-sales-thumbnail.jpg");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .bada{
+            display: flex;
+            justify-content: space-between;
+        }
+        .d1{
+            width: 39vw;
+            height: 50vh;
+        }
+        .d2{
+            width: 39vw;
+            height: 50vh;
+        }
+        .details{
+            display: flex;
+            justify-content: space-between;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+
+    <div class="banner">
+        <div class="nav">
+            <div class="navone"><img src="./tata.webp" alt="Tata Motors Logo"></div>
+
+            <div class="navthree">
+                <ul>
+                    <li><img src="./search_24dp_000000_FILL0_wght400_GRAD0_opsz24 (1).svg" alt=""></li>
+                    <li><img src="./menu_24dp_000000_FILL0_wght400_GRAD0_opsz24 (1).svg" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="outmain">
+        <div class="main">
+            <p style="font-size: 1.5vw; font-weight: 300;">*For the previous press releases, pleases <span style="color: blue;">click here</span> and for media library <span style="color: blue;">click here</span>.
+
+            </p>
+            <div style="display: flex; flex-wrap: wrap; align-items: flex-end; gap: 25px;">
+
+    <!-- Latest heading -->
+    <h2 style="font-size: 32px; font-weight: 700; margin: 0;">Latest</h2>
+
+    <!-- Search box -->
+    <div style="display: flex; flex-direction: column; flex: 1 1 250px; min-width: 180px;">
+      <label style="font-size: 14px; color: #777;">Search by topic</label>
+      <input type="text" placeholder="" 
+        style="border: none; border-bottom: 1px solid #000; outline: none; width: 100%; padding: 6px 0; font-size: 15px;">
+    </div>
+
+    <!-- Subject dropdown -->
+    <div style="display: flex; flex-direction: column; flex: 1 1 120px; min-width: 100px;">
+      <label style="font-size: 14px; color: #777;">Subject</label>
+      <select style="border: none; border-bottom: 1px solid #000; outline: none; font-size: 15px; width: 100%; padding: 6px 0; background: transparent;">
+        <option>all</option>
+        <option>News</option>
+        <option>Event</option>
+      </select>
+    </div>
+
+    <!-- Year dropdown -->
+    <div style="display: flex; flex-direction: column; flex: 1 1 120px; min-width: 100px;">
+      <label style="font-size: 14px; color: #777;">YEAR</label>
+      <select style="border: none; border-bottom: 1px solid #000; outline: none; font-size: 15px; width: 100%; padding: 6px 0; background: transparent;">
+        <option>Year</option>
+        <option>2025</option>
+        <option>2024</option>
+        <option>2023</option>
+      </select>
+    </div>
+
+    <!-- Month dropdown -->
+    <div style="display: flex; flex-direction: column; flex: 1 1 120px; min-width: 100px;">
+      <label style="font-size: 14px; color: #777;">Month</label>
+      <select style="border: none; border-bottom: 1px solid #000; outline: none; font-size: 15px; width: 100%; padding: 6px 0; background: transparent;">
+        <option>Month</option>
+        <option>January</option>
+        <option>February</option>
+        <option>March</option>
+        <option>April</option>
+      </select>
+    </div>
+
+  </div>
+
+  <!-- Responsive tweak -->
+  <div style="@media (max-width: 700px) { div[style*='display: flex; flex-wrap: wrap'] {flex-direction: column; align-items: stretch;} }"></div>
+
+     <div class="bada">
+            <div class="banner1"></div>
+            <div class="banner2"></div>
+            </div>
+
+            <div class="details">
+                <div class="d1"><h1>Tata Nexon becomes India’s no.1 selling car in September 2025</h1><p>Tata Motors Passenger Vehicles (TMPV), one of India’s leading automotive manufacturers, today announced the inclusion of Advanced Driver Assistance Systems (ADAS) in its Nexon lineup.</p> <p style="color: blue;">Read more &rarr;</p></div>
+                <div class="d2"><h1>Tata Motors Q2 FY26 Sales
+</h1><p>Commerical Vehicle and Passenger Vehicle sales registered by Tata Motors Limited in Q2FY26. 
+
+</p><p style="color: blue;padding-top: 4.2vw;">Read more &rarr;</p></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="tata-footer" style="float:right;">
+        <div class="footer-content">
+
+            <div class="footer-column tata-brand">
+                <a href="#" class="logo-link">
+                    <img style="color: white;" src="./Tata_Sons_Logo_48_32.webp" alt="TATA Logo" class="tata-logo">
+                </a>
+                <a href="#" class="footer-link">TATA <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="footer-column">
+                <h3 class="column-title">Tata Cars</h3>
+                <ul class="footer-links-list">
+                    <li><a href="#" class="footer-link">Nexon <i class="fas fa-arrow-right"></i></a></li>
+                    <li><a href="#" class="footer-link">Tiago <i class="fas fa-arrow-right"></i></a></li>
+                    <li><a href="#" class="footer-link">Tigor <i class="fas fa-arrow-right"></i></a></li>
+                    <li><a href="#" class="footer-link">Punch <i class="fas fa-arrow-right"></i></a></li>
+                    <li><a href="#" class="footer-link">Curvv <i class="fas fa-arrow-right"></i></a></li>
+                    <li><a href="#" class="footer-link">Harrier <i class="fas fa-arrow-right"></i></a></li>
+                    <li><a href="#" class="footer-link">Safari <i class="fas fa-arrow-right"></i></a></li>
+                    <li><a href="#" class="footer-link">Altroz <i class="fas fa-arrow-right"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 class="column-title">Help</h3>
+                <ul class="footer-links-list">
+                    <li><a href="#" class="footer-link">Service <i class="fas fa-arrow-right"></i></a></li>
+                    <li><a href="#" class="footer-link">Dealer Locator <i class="fas fa-arrow-right"></i></a></li>
+                    <li><a href="#" class="footer-link">Digital Showroom <i class="fas fa-arrow-right"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 class="column-title">Quick Links</h3>
+                <ul class="footer-links-list">
+                    <li><a href="#" class="footer-link">Contact Us <i class="fas fa-arrow-right"></i></a></li>
+                    <li><a href="#" class="footer-link">Privacy Policy <i class="fas fa-arrow-right"></i></a></li>
+                    <li><a href="tc.html" class="footer-link">Terms & Condition <i class="fas fa-arrow-right"></i></a></li>
+                    <li><a href="#" class="footer-link">Blogs <i class="fas fa-arrow-right"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column social-links">
+                <h3 class="column-title">Social</h3>
+                <ul class="footer-links-list">
+                    <li><a href="#" class="footer-link"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                    <li><a href="#" class="footer-link"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#" class="footer-link"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#" class="footer-link"><i class="fab fa-youtube"></i> Youtube</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p class="roadside-assistance">
+                For Roadside Assistance, call on - <a href="tel:18002098282">18002098282</a>
+            </p>
+            <p class="copyright">
+                Copyright © 2025 TATA Motors. All Rights Reserved
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
